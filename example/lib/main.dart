@@ -71,6 +71,8 @@ class HomePage extends StatelessWidget {
           itemBuilder: (context, index) => Hero(
             tag: 'item$index',
             transitionOnUserGestures: true,
+            // This has nothing to do with the above_hero library, just for the less harsh effect of Hero itself
+            flightShuttleBuilder: heroFlightShuttle,
             child: Material(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
@@ -98,6 +100,36 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Widget heroFlightShuttle(
+    flightContext,
+    animation,
+    flightDirection,
+    fromHeroContext,
+    toHeroContext,
+  ) {
+    return AnimatedBuilder(
+      animation: animation,
+      builder: (context, child) {
+        final Widget startWidget = flightDirection == HeroFlightDirection.push
+            ? fromHeroContext.widget
+            : toHeroContext.widget;
+        final Widget endWidget = flightDirection == HeroFlightDirection.push
+            ? toHeroContext.widget
+            : fromHeroContext.widget;
+
+        final progress = Curves.easeInOut.transform(animation.value);
+
+        return Stack(
+          fit: StackFit.expand,
+          children: [
+            Opacity(opacity: 1.0 - progress, child: startWidget),
+            Opacity(opacity: progress, child: endWidget),
+          ],
+        );
+      },
     );
   }
 }
