@@ -46,9 +46,3 @@ After the animation is complete, `AboveHero` returns the widget to its rightful 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-![ezgif-1978061fcd6faf](https://github.com/user-attachments/assets/cb732320-49b8-4c89-aab7-d8231c4e4236)
-
-![ezgif-1562aa6c8f64a3](https://github.com/user-attachments/assets/26604dd6-1f81-42c6-bdf6-d59ec99b2fd1)
-
-
