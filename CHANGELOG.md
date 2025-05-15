@@ -1,3 +1,7 @@
+## 1.2.0
+
+* Fixed doubling of overlay offset during animation when using some page builders.
+
 ## 1.1.2
 
 * Update video preview and add a Usage section to README

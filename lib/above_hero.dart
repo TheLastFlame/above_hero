@@ -90,14 +90,14 @@ class _AboveHeroState extends State<AboveHero> {
 
       _overlayEntry = OverlayEntry(
         builder: (context) {
-          return CompositedTransformFollower(
-            link: _layerLink,
-            child: route.buildTransitions(
-              context,
-              route.animation!,
-              route.secondaryAnimation!,
+          return route.buildTransitions(
+            context,
+            route.animation!,
+            route.secondaryAnimation!,
+            CompositedTransformFollower(
+              link: _layerLink,
               // Fight against widgets like Container that try to expand uncontrollably to the whole screen
-              Align(
+              child: Align(
                 alignment: Alignment.topLeft,
                 child: SizedBox(
                   height: _childSize?.height,

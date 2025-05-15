@@ -3,7 +3,7 @@
 [![Pub Version](https://img.shields.io/pub/v/above_hero?label=pub.dev)](https://pub.dev/packages/above_hero)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[Русская версия](README_RU.md)
+[Русская версия](https://github.com/TheLastFlame/above_hero/blob/master/README_RU.md)
 
 A package that allows limited control over the z-index of the Hero widget by placing page elements above it during page transitions.
 
