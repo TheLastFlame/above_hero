@@ -14,11 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'AboveHero Example',
       theme: ThemeData(
         pageTransitionsTheme: PageTransitionsTheme(
           builders: {
             for (final platform in TargetPlatform.values)
+            // Part of the universal_back_gesture package, allows you to 
+            // add a customizable back gesture to any transition builder
+            // Not related to above_hero, used for better demonstration
               platform: BackGesturePageTransitionsBuilder(
                 parentTransitionBuilder: FadeForwardsPageTransitionsBuilder(),
               ),

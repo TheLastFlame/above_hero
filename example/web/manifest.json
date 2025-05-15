@@ -1,11 +1,11 @@
 {
-    "name": "example",
-    "short_name": "example",
+    "name": "AboveHero Example",
+    "short_name": "AboveHero",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Example app to demonstrate the above_hero library",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

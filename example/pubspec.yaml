@@ -1,5 +1,5 @@
-name: example
-description: "A new Flutter project."
+name: above_hero_example
+description: "Example app to demonstrate the above_hero library"
 publish_to: 'none'
 
 version: 1.0.0+1
