@@ -1,6 +1,3 @@
-example/android/* linguist-vendored
-example/ios/* linguist-vendored
-example/web/* linguist-vendored
-example/windows/* linguist-vendored
-example/linux/* linguist-vendored
-example/macos/* linguist-vendored
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.o linguist-generated
