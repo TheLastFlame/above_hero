@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class AboveHero extends StatefulWidget {
-  const AboveHero({super.key, required this.child});
+  const AboveHero(
+      {super.key, required this.child, this.transitionOnUserGestures = false});
 
   final Widget child;
+  final bool transitionOnUserGestures;
 
   @override
   State<AboveHero> createState() => _AboveHeroState();
@@ -26,6 +28,10 @@ class _AboveHeroState extends State<AboveHero> {
     final route = ModalRoute.of(context);
 
     if (route == null) return;
+
+    if (route.popGestureInProgress && !widget.transitionOnUserGestures) {
+      return;
+    }
 
     final isTransitioning =
         (status?.isAnimating ?? false) || route.popGestureInProgress;
@@ -90,9 +96,11 @@ class _AboveHeroState extends State<AboveHero> {
 
     final route = ModalRoute.of(context);
 
-    _userGestureNotifier = route?.navigator?.userGestureInProgressNotifier;
+    if (widget.transitionOnUserGestures) {
+      _userGestureNotifier = route?.navigator?.userGestureInProgressNotifier;
 
-    _userGestureNotifier?.addListener(_handleStatusChange);
+      _userGestureNotifier?.addListener(_handleStatusChange);
+    }
 
     if (route?.animation != null) {
       _animation = route!.animation;

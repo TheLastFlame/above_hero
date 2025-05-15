@@ -164,6 +164,7 @@ class CardPage extends StatelessWidget {
             ),
 
             AboveHero(
+              transitionOnUserGestures: true,
               child: DraggableScrollableSheet(
                 maxChildSize: maxChildSize,
                 initialChildSize: childSize,
@@ -187,6 +188,7 @@ class CardPage extends StatelessWidget {
             ),
             SafeArea(
               child: AboveHero(
+                transitionOnUserGestures: true,
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Padding(
