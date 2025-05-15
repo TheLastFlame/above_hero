@@ -24,11 +24,19 @@ Online demo: [https://thela.space/above_hero](https://thela.space/above_hero)
 
 ## How does it work?
 
-During a transition animation, both pages are located in the navigation overlay. The Hero widget adds itself to this overlay at the very top. `above_hero`... does the same.
-`AboveHero` tracks the start of the transition animation, waits for the Hero to appear in the overlay, and then moves its child widget to the top, replacing it with a placeholder.
+During the transition animation, both pages are located in the navigation overlay. Hero adds itself to this overlay at the very top.
+
+`above_hero`... does the same.
+
+1. Tracks the moment the transition animation starts
+2. Waits for Hero to appear in the overlay
+3. Moves its child widget to the top, replacing it with a placeholder.
+
 In the overlay, `AboveHero` correctly positions the widget and applies the same transition animation to it that is applied to the screen.
-Visually, it appears as if the widget is still part of the screen.
-After the animation completes, `AboveHero` returns the widget to its rightful place on the page.
+
+Visually, everything looks as if the widget is still part of the screen.
+
+After the animation is complete, `AboveHero` returns the widget to its rightful place on the page.
 
 ## License
 
