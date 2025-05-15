@@ -13,15 +13,20 @@
 <table>
   <tr>
     <td align="center">
-      <b>без above_hero</b><br>
-      <img src="URL_TO_YOUR_GIF_WITHOUT_PACKAGE" alt="без above_hero" width="300" />
+      <img src="https://github.com/user-attachments/assets/26604dd6-1f81-42c6-bdf6-d59ec99b2fd1" alt="without above_hero" width="300" />
+      <div style="display: block; margin-top: 8px;">
+        <b>без above_hero</b>
+      </div>
     </td>
     <td align="center">
-      <b>с above_hero</b><br>
-      <img src="URL_TO_YOUR_GIF_WITH_PACKAGE" alt="с above_hero" width="300" />
+      <img src="https://github.com/user-attachments/assets/cb732320-49b8-4c89-aab7-d8231c4e4236" alt="with above_hero" width="300" />
+      <div style="display: block; margin-top: 8px;">
+        <b>с above_hero</b>
+      </div>
     </td>
   </tr>
 </table>
+
 
 Онлайн демо: [https://thela.space/above_hero](https://thela.space/above_hero)
 
