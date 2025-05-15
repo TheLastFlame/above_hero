@@ -12,14 +12,17 @@
 
 <table>
   <tr>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/26604dd6-1f81-42c6-bdf6-d59ec99b2fd1" alt="without above_hero" width="300" />
+    <td align="center" colspan="2">
+      <img src="https://github.com/user-attachments/assets/363f734c-4ffe-4845-bf32-86c7cf4a7581" alt="combined preview" width="600" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
       <div style="display: block; margin-top: 8px;">
         <b>без above_hero</b>
       </div>
     </td>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/cb732320-49b8-4c89-aab7-d8231c4e4236" alt="with above_hero" width="300" />
+    <td align="center" width="50%">
       <div style="display: block; margin-top: 8px;">
         <b>с above_hero</b>
       </div>
@@ -28,7 +31,30 @@
 </table>
 
 
+
 Онлайн демо: [https://thela.space/above_hero](https://thela.space/above_hero)
+
+## Использование
+ 
+Просто оберните в AboveHero те виджеты, которые должны отображаться над Hero:
+ ```dart
+ Stack(
+   children: <Widget>[
+     Hero(tag: "myHero", child: MyHeroContent()),
+     Positioned(
+       top: 16,
+       left: 16,
+       child: AboveHero(
+         child: ElevatedButton(
+           onPressed: () => Navigator.pop(context),
+           child: Icon(Icons.arrow_back),
+         ),
+       ),
+     ),
+   ],
+ )
+ ```
+
 
 ## Как это работает?
 

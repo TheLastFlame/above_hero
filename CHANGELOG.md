@@ -1,3 +1,7 @@
+## 1.1.2
+
+* Update video preview and add a Usage section to README
+
 ## 1.1.1
 
 * Update README
