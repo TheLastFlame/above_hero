@@ -13,7 +13,7 @@ A package that allows limited control over the z-index of the Hero widget by pla
 <table>
   <tr>
     <td align="center" colspan="2">
-     <img width="400" src="https://github.com/user-attachments/assets/c4d56275-9e3b-4722-a835-f5b67509791b" />
+     <img width="600" src="https://github.com/user-attachments/assets/c4d56275-9e3b-4722-a835-f5b67509791b" />
     </td>
   </tr>
   <tr>
