@@ -1,3 +1,7 @@
+## 1.3.0
+
+* Fixed hot reload [#2](https://github.com/TheLastFlame/above_hero/pull/2)
+
 ## 1.2.0
 
 * Fixed doubling of overlay offset during animation when using some page builders.
