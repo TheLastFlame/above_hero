@@ -29,7 +29,7 @@ A package that allows limited control over the z-index of the Hero widget by pla
   </tr>
 </table>
 
-Online demo: [https://thela.space/above_hero](https://thela.space/above_hero)
+Online demo: [https://thelastflame.github.io/above_hero/](https://thelastflame.github.io/above_hero/)
 
 ## Usage
 
