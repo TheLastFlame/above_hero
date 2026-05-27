@@ -59,13 +59,7 @@ class _AboveHeroState extends State<AboveHero> {
   bool _showChild = true;
 
   final _key = GlobalKey();
-  late KeyedSubtree _child;
-
-  @override
-  void initState() {
-    super.initState();
-    _child = KeyedSubtree(key: _key, child: widget.child);
-  }
+  late KeyedSubtree _child = KeyedSubtree(key: _key, child: widget.child);
 
   @override
   void didUpdateWidget(AboveHero oldWidget) {
