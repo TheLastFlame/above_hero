@@ -59,7 +59,15 @@ class _AboveHeroState extends State<AboveHero> {
   bool _showChild = true;
 
   final _key = GlobalKey();
-  late final _child = KeyedSubtree(key: _key, child: widget.child);
+  late KeyedSubtree _child = KeyedSubtree(key: _key, child: widget.child);
+
+  @override
+  void didUpdateWidget(AboveHero oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.child != oldWidget.child) {
+      _child = KeyedSubtree(key: _key, child: widget.child);
+    }
+  }
 
   void _handleStatusChange([AnimationStatus? status]) async {
     final route = ModalRoute.of(context);
