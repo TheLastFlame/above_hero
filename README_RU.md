@@ -13,7 +13,7 @@
 <table>
   <tr>
     <td align="center" colspan="2">
-      <img src="https://github.com/user-attachments/assets/363f734c-4ffe-4845-bf32-86c7cf4a7581" alt="combined preview" width="600" />
+       <img width="600" src="https://github.com/user-attachments/assets/c4d56275-9e3b-4722-a835-f5b67509791b" />
     </td>
   </tr>
   <tr>
